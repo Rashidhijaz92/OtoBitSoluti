@@ -34,10 +34,11 @@ namespace loginsigupMj.Controllers
             permClaims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
             permClaims.Add(new Claim("Valid", "1"));
             permClaims.Add(new Claim("UserId", "1"));
-            permClaims.Add(new Claim("Name", "Rashid"));
-            permClaims.Add(new Claim(register.Email, ""));
-            permClaims.Add(new Claim(register.FirstName, ""));
-            permClaims.Add(new Claim(register.Gender, "Male")); 
+            permClaims.Add(new Claim("Email", "ABCD@gmail.com"));
+            permClaims.Add(new Claim("PassWord", "123"));
+            //permClaims.Add(new Claim("Email", register.Email));
+            //permClaims.Add(new Claim("FirtName",register.FirstName));
+            //permClaims.Add(new Claim("Gender", register.Gender)); 
             // permClaims.Add(new Claim(Logapi.username, Logapi.password)); 
             //permClaims.Add(new Claim(username, password)); 
 
